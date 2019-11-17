@@ -5,7 +5,7 @@ import Photo from "./Photo";
 function Photowall(props)
 {
     return(
-            <div className='photogrid'>
+            <div className ='photogrid'>
                 {props.post.map((postt, index)=> <Photo key={index} removePhoto={props.removePhoto} posttt= {postt}/>)}
 
             </div>
