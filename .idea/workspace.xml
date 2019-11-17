@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="03620745-20a3-42e9-8694-fe39f08edf03" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddPhoto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Photowall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Photowall.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573924081127</updated>
-      <workItem from="1573924082225" duration="17480000" />
+      <workItem from="1573924082225" duration="23258000" />
     </task>
     <servers />
   </component>

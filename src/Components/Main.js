@@ -2,6 +2,9 @@ import React,{Component} from 'react';
 import Title from "./Title";
 import Photowall from "./Photowall";
 import AddPhoto from "./AddPhoto";
+import {Route} from "react-router-dom";
+import PropTypes from "prop-types";
+
 class Main extends Component{
     constructor(props) {
         super();
@@ -20,13 +23,11 @@ class Main extends Component{
                 id: "2",
                 description: "On a vacation!",
                 imageLink: "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/08/24/104670887-VacationExplainsTHUMBWEB.1910x1000.jpg"
-            }],
-            screen:'photo'
-
+            }]
 
         };
         this.removePhotoo= this.removePhotoo.bind(this);
-        this.navigate = this.navigate.bind(this);
+        this.addPhoto=this.addPhoto.bind(this);
     }
 
     removePhotoo(remove){
@@ -36,28 +37,40 @@ class Main extends Component{
         })
          )
     }
-    navigate()
-    {
-        this.setState({
-            screen: 'addphoto'
-    })
+    addPhoto(postsubmitted){
+        this.setState((state)=> (
+        {
+            posts : state.posts.concat([postsubmitted])
+
+        }))
+
     }
+    componentDidUpdate(prevProps,prevState) {
+        console.log(prevState.posts)
+        console.log(this.state)
+    }
+
 
     render() {
         return(
             <div>
-                { this.state.screen ==='photo' &&(
+                <Route exact path='/' render={()=> (
                     <div>
                     <Title data={"Photowall"}/>
                     <Photowall post={this.state.posts} removePhoto={this.removePhotoo} onNavigate={this.navigate}/>
-                </div>)
-                }
+                    </div>
+                )}/>
+                <Route exact path='/addphoto' render={({history})=>(
+                    <AddPhoto onAddPhoto={(addedPost)=>{
 
-                { this.state.screen ==='addphoto' &&(
-                    <div>
-                        <AddPhoto />
-                    </div>)
-                }
+                        this.addPhoto(addedPost)
+                        console.log(this.state.posts)
+
+                        history.push('./')
+                    }}/>
+                )}/>
+
+
             </div>
         )
     }

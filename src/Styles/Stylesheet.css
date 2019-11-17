@@ -55,3 +55,28 @@ h1{
     background-size: contain;
     border: none;
 }
+.form{
+    background-color: cornflowerblue;
+    max-width: 360px;
+    margin: 0px auto;
+    padding: 45px;
+    text-align: center;
+
+}
+.form input{
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 0 15px;
+}
+.form button{
+    font-family: sans-serif;
+    background-color: bisque;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+}
